@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blogging platform</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div>
+        <header class="header-div">
+            <h1>Front-End Development</h1>
+            <p>A computer science portal for Blog</p>
+        </header>
+
+        <nav>
+            <a href="Home">Home</a>
+            <a href="HTML">HTML</a>
+            <a href="CSS">CSS</a>
+            <a href="JavaSript">JavaScript</a>
+            <a href="ReactJS">ReactJS</a>
+        </nav>
+
+        <div class="container">
+            <main>
+                <article>
+                    <h2>HTML</h2>
+                    <p class="post-meta">
+                        Published on December 11, 2024 by Blog
+                    </p>
+                    <p>
+                        HTML stands for HyperText Markup Language. It is
+                        used to design the web pages. With the help of HTML,
+                        you can create a complete website structure. HTML
+                        is the combination of Hypertext and Markup language.
+                        Hypertext defines the link between the web pages
+                        and markup language defines the text document within
+                        the tag that define the structure of web pages.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>CSS</h2>
+                    <p class="post-meta">
+                        Published on December 10, 2024 by Blog
+                    </p>
+                    <p>
+                        CSS (Cascading Style Sheets) is used to styles web
+                        pages. Cascading Style Sheets are fondly referred
+                        to as CSS. The reason for using this is to simplify
+                        the process of making web pages presentable. It allows
+                        you to apply styles on web pages. More importantly,
+                        it enables you to do this independently of the HTML
+                        that makes up each web page.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>JavaScript</h2>
+                    <p class="post-meta">
+                        Published on December 09, 2024 by Blog
+                    </p>
+                    <p>
+                        JavaScript (JS) is the most popular lightweight,
+                        interpreted compiled programming language. It can
+                        be used for both Client-side as well as Server-side
+                        developments. JavaScript also known as a scripting
+                        language for web pages. This JavaScript Tutorial is
+                        designed to help both beginners and experienced
+                        professionals master the fundamentals of JavaScript
+                        and unleash their creativity to build powerful web
+                        applications. From basic syntax and data types to
+                        advanced topics such as object-oriented programming
+                        and DOM manipulation.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>ReactJS</h2>
+                    <p class="post-meta">
+                        Published on December 08, 2024 by Blog
+                    </p>
+                    <p>
+                        ReactJS is a declarative, efficient, and flexible
+                        JavaScript library for building user interfaces.
+                        It is an open-source, component-based front-end
+                        library that is responsible only for the view layer
+                        of the application. ReactJS is not a framework, it
+                        is just a library developed by Facebook to solve
+                        some problems that we were facing earlier.
+                    </p>
+                </article>
+            </main>
+
+            <aside>
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="HTML">HTML</a></li>
+                    <li>
+                        <a href="CSS">CSS</a>
+                    </li>
+                    <li><a href="JAVASCRIPT">JavaScript</a></li>
+                    <li><a href="ReactJS">ReactJS</a></li>
+                </ul>
+            </aside>
+        </div>
+        <!-- <div> -->
+        <h1>BLOGGING PLATFORM</h1>
+        <div class="img-div">
+            <div style="padding-left: 10%;padding-top: 2%;">
+                <h1 class="h1-div">PraRoz</h1>
+            </div>
+
+            <div style="padding-left:24%;">
+                <h2 class="h2-div">Web Design &</h2>
+                <h2 class="div-h2">Development</h2>
+                <h2 class="h2-div">Course</h2>
+                <p class="p-div">Web Design is a specialisation of an the design stream. they also</p>
+                <p class="p-div">use HTML. CSS. WYSIWYG editing software. mark up validators etc.</p>
+                <p class="p-div">to create design element.</p>
+                <!-- <div style="padding-left: 6%;"> -->
+                <button id="joinUsButton">Join Us</button>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="div-body">
+            <header>
+                <p>- Actually the right username is SuperBob and passsword 12RobotoLove -</p>
+            </header>
+            <section class="CheckBox">
+                <h1>Authentication yourself</h1>
+                <form action="#" method="post" name="authentication" id="authentication" class="authentication">
+                    <label for="username">Enter your username :</label>
+                    <br>
+                    <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+"
+                        required>
+                    <br>
+                    <label for="password">Enter your password :</label>
+                    <br>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="15"
+                        pattern="[a-zA-Z0-9]+" required>
+                    <br>
+                    <input id="sub" type="submit" value="Submit" onclick="Verify();"></input>
+                    <button id="rule" type="button" onclick="Show('rules');">Rules</button>
+                </form>
+                <div id="rules">
+                    <ul>
+                        <li>Username must have between 3 and 15 caracters</li>
+                        <li>Password must have between 8 and 15 caracters</li>
+                        <li>Username and Password required</li>
+                        <li>Use only numbers and letters</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>© 2024 Your Blog Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
